@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <title>114306047_Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 24px; background:#fafafa; }
+    table { width: 100%; max-width: 980px; margin: 0 auto; border-collapse: collapse; background:#fff; }
+    th, td { border: 1px solid #ddd; padding: 14px; vertical-align: top; }
+    h1 { margin: 12px 0; }
+    .section-title { font-size: 20px; font-weight: bold; text-align: left; }
+    .row-bg-hero { background: #e8f3ff; }      
+    .row-bg-learn { background: #fff4e5; }     
+    .row-bg-portfolio { background: #eaf7ea; } 
+    .row-bg-contact { background: #f2e8ff; }  
+    .label { font-weight:bold; width: 20%; white-space: nowrap; }
+    .music-wrap { display:flex; gap:24px; flex-wrap:wrap; }
+    .music-item { text-align:center; width: 160px; }
+    .music-item img { width: 120px; height: 120px; object-fit: cover; display:block; margin: 0 auto 8px; }
+    .muted { color:#666; font-size: 12px; }
+    a { text-decoration: none; }
+    ul { margin: 8px 0 0 20px; }
+    figure { margin:0; }
+    figcaption { font-size: 14px; }
+
+    @media (max-width: 560px) {
+      .label { width:auto; display:block; margin-bottom:6px; }
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr class="row-bg-hero">
+      <th colspan="4">
+        <h1>Welcome to He Wenwen Personal Portfolio</h1>
+        <div class="muted">NCCU IM • Freshman</div>
+      </th>
+    </tr>
+    <tr>
+      <td rowspan="4" style="width: 200px; text-align:center;">
+        <img src="profile.jpg" alt="Profile photo of He Wenwen" style="max-width: 180px; height:auto; border-radius:8px;" />
+      </td>
+      <td class="label">Name</td>
+      <td colspan="2">何雯雯 (He Wenwen)</td>
+    </tr>
+    <tr>
+      <td class="label">School</td>
+      <td colspan="2">National Chengchi University (NCCU)</td>
+    </tr>
+    <tr>
+      <td class="label">Department</td>
+      <td colspan="2">Information Management</td>
+    </tr>
+    <tr>
+      <td class="label">Grade</td>
+      <td colspan="2">Freshman</td>
+    </tr>
+
+    <tr class="row-bg-learn">
+      <td colspan="4" class="section-title">Learning History</td>
+    </tr>
+    <tr>
+      <td class="label">Programming Languages</td>
+      <td colspan="3">
+        <ul>
+          <li>Java (Intro)</li>
+          <li>HTML &amp; CSS (Beginner)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="label">Course Records</td>
+      <td colspan="3">
+        <ul>
+          <li>Introduction to Computer Science</li>
+          <li>Programming (Java)</li>
+          <li>Financial Accounting (IFRS)</li>
+          <li>Microeconomics</li>
+        </ul>
+      </td>
+    </tr>
+    <tr class="row-bg-portfolio">
+      <td colspan="4" class="section-title">Portfolio</td>
+    </tr>
+
+    <tr>
+      <td class="label">Assignments</td>
+      <td colspan="3">
+        <ul>
+          <li><a href="https://github.com/wikeky-creator/1141_IntroToCS_114306047/tree/main/HW1_Github" target="_blank" rel="noopener">HW1_Github</a ></li>
+          <li><a href="https://github.com/wikeky-creator/1141_IntroToCS_114306047/tree/main/HW2_DeepDreamGenerator" 
+            target="_blank" rel="noopener">HW2_DeepDreamGenerator</a ></li>
+          <li><a href="https://github.com/wikeky-creator/1141_IntroToCS_114306047/tree/main/HW3_Excel1" target="_blank" rel="noopener">HW3_Excel1</a ></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="label">Favorite Music</td>
+      <td colspan="3">
+        <div class="music-wrap">
+          <div class="music-item">
+            <a href="https://youtu.be/p7x0ahyev9k?si=VOu1ZdzKj_3XtZOd" target="_blank" rel="noopener">
+              <img src="htet yan.jpg" alt="Song cover link 1" />
+            </a >
+            <figcaption>Lam Khwal Twar Lal Late Byar Lone Del</figcaption>
+          </div>
+          <div class="music-item">
+            <a href="https://youtu.be/kTyTcABMLIM?si=Qe_f-4AlRQf68J_e" target="_blank" rel="noopener">
+              <img src="shwe htoo.jpg" alt="Song cover link 2" />
+            </a >
+            <figcaption>Tan Khar Pwint Htar Par Tal</figcaption>
+          </div>
+          <div class="music-item">
+            <a href="https://youtu.be/IW_5-oATy4s?si=vTQmYq6ekb3FFVc3" target="_blank" rel="noopener">
+              <img src="lan.jpg" alt="Song cover link 3" />
+            </a >
+            <figcaption>Ma Sone Taw Lan</figcaption>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Row 12: Contact 標題（Requirement #5） -->
+    <tr class="row-bg-contact">
+      <td colspan="4" class="section-title">Contact Information</td>
+    </tr>
+    <!-- Row 13: Email（mailto）＋ 大學圖片 -->
+    <tr>
+      <td class="label">Email</td>
+      <td>
+        <a href="mailto:wikeky@gmail.com">wikeky@gmail.com</a >
+      </td>
+      <td class="label">University</td>
+      <td>
+        <img src="nccu.jpg" alt="NCCU Logo" style="max-width:160px; height:auto;" />
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
