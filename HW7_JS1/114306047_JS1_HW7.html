@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>1A2B Game</title>
+</head>
+<body>
+    <h1>114306047_HW7_1A2B</h1>
+
+  <p>
+    <label for="guessInput">Enter 4 unique numbers</label>
+    <input id="guessInput" type="text">
+    <button onclick="play()">Guess!</button>
+</p>
+
+    <div id="record"></div>
+
+    <script>
+var answer = generateAnswer();
+var count = 0;
+var recordDiv = document.getElementById("record");
+
+function generateAnswer() {
+    var digits = [0,1,2,3,4,5,6,7,8,9];
+    var ans = [];
+    for (var i = 0; i < 4; i++) {
+        var idx = Math.floor(Math.random() * digits.length);
+        ans.push(digits[idx]);
+        digits.splice(idx, 1);
+    }
+    return ans.join("");
+}
+
+function isValid(str) {
+    if (str.length !== 4) return false;
+    for (var i = 0; i < 4; i++) {
+        if (isNaN(Number(str[i]))) return false;
+    }
+    return new Set(str).size === 4;
+}
+
+function checkAB(guess, ans) {
+    var A = 0, B = 0;
+    for (var i = 0; i < 4; i++) {
+        if (guess[i] === ans[i]) A++;
+        else if (ans.includes(guess[i])) B++;
+    }
+    return A + "A" + B + "B";
+}
+
+function play() {
+    var input = document.getElementById("guessInput").value;
+
+    if (!isValid(input)) {
+        alert("輸入不合法！");
+        document.getElementById("guessInput").value = "";
+        return;
+    }
+
+    count++;
+    var result = checkAB(input, answer);
+
+    recordDiv.innerHTML += "第 " + count + " 次：" + input + " → " + result + "<br>";
+
+    if (result === "4A0B") {
+        alert("恭喜！你猜對了！總共猜了 " + count + " 次！");
+    }
+
+    document.getElementById("guessInput").value = "";
+}    </script>
+</body>
+</html>
