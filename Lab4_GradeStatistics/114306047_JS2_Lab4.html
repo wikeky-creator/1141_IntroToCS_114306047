@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Statistics</title>
+  <link rel="stylesheet" href="lab4.css">
+</head>
+<body>
+
+  <h1>Grade Statistics</h1>
+
+  <div class="input-row">
+    <input type="number" id="math" placeholder="Math">
+    <input type="number" id="english" placeholder="English">
+    <button id="submit">Submit</button>
+  </div>
+
+  <!-- 表格 -->
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Math</th>
+        <th>English</th>
+        <th>Average</th>
+      </tr>
+    </thead>
+
+    <tbody id="tbody">
+      <!-- JS 動態新增 -->
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th>Average</th>
+        <th id="avgMath">0.00</th>
+        <th id="avgEnglish">0.00</th>
+        <th id="avgAll">0.00</th>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script src="lab4.js"></script>
+</body>
+</html>
