@@ -11,7 +11,8 @@ const avgAllEl = document.getElementById("avgAll");
 
 function updateAverage() {
   const rows = tbody.querySelectorAll("tr");
-  let sumMath = 0, sumEnglish = 0;
+  let sumMath = 0;
+  let sumEnglish = 0;
 
   rows.forEach(row => {
     sumMath += Number(row.children[1].textContent);
@@ -51,6 +52,7 @@ submitBtn.addEventListener("click", function () {
   `;
 
   tbody.appendChild(tr);
+
   updateAverage();
 
   mathInput.value = "";
